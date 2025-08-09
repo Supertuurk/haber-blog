@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>HABER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} - Haber Blogu</title>
   <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-  <h1>HABER</h1>
-  <p>{{content}}</p>
-  <a href="/">Geri Dön</a>
+  <div class="container">
+    <header>
+      <h1>📰 Haber Blogu</h1>
+      <p>Detaylı haber görüntüleme</p>
+    </header>
+    
+    <main>
+      <article class="news-detail">
+        <p>{{content}}</p>
+      </article>
+      
+      <div class="nav-links">
+        <a href="/" class="btn btn-secondary">← Geri Dön</a>
+        <a href="/create" class="btn">➕ Yeni Haber Ekle</a>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
